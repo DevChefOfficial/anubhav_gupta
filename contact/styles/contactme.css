@@ -64,19 +64,12 @@ a {
     }
 
     .contact-main {
-
-
+        margin: auto;
         grid-template-columns: 1fr;
-
-
     }
-
-
-
-
-
-
-
-
+    
+    .contact-me-child{
+        margin: auto;
+    }
 
 }
