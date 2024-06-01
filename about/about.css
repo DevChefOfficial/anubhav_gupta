@@ -118,8 +118,7 @@
     border: none;
     padding:7px ;
 }
-.about-right .frontend,
-.language{
-    margin:0px 4px 10px 4px;
+.about-right .frontend{
+    margin:auto;
 }
 }
