@@ -56,11 +56,12 @@
 .card-text{
     font-size: 1.5rem;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .projects-container {
         grid-template-columns: repeat(1, 1fr);
         height: max-content;
         margin: 20px 0px;
+        row-gap: 15px;
     }
 
     #project {
@@ -68,7 +69,7 @@
     }
 
     .project-card {
-        height: 430px;
+        height: 450px;
         width: 87vw;
         padding-bottom: 20px;
         margin: 10px;
