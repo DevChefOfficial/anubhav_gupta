@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
     --darkblue: #151515; /* Updated dark blue */
     --blue: #007bff;
@@ -27,7 +27,8 @@
     --danger: #dc3545;
     --light: #EEEEEE; /* Updated light color */
     --dark: #343a40;
-    --main-font: 'Rubik', sans-serif;
+    --main-font: "Montserrat", sans-serif;
+    --secondary-font:"Open Sans", sans-serif;
     --thin-paragraph: 'Kanit', sans-serif;
     --thin-navbar-font: 'Montserrat', sans-serif;
     --custom-color-1: #151515;
@@ -64,6 +65,9 @@ body {
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    margin-top: 7px;
 }
 
 .btn:hover {
@@ -84,9 +88,14 @@ nav a {
 }
 
 #head1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--secondary-font);
+    font-size: 4rem;
 }
-
+.headings{
+    font-family: var( --main-font);
+    font-size: 4rem;
+    font-weight: 600;
+}
 .main-homePage {
     overflow: hidden;
     display: flex;
@@ -121,12 +130,7 @@ nav a {
     color: var(--orange);
 }
 
-h1,
-.project-heading-title,
-.about-heading {
-    font-size: 5.3rem;
-    font-family: var(--main-font);
-}
+
 
 p,
 .texts {
@@ -165,7 +169,9 @@ footer {
         width: 100vw;
         z-index: 10;
     }
-
+    #head1{
+        font-size: 3rem;
+    }
     .main-homePage {
         flex-wrap: nowrap;
         display: flex;
